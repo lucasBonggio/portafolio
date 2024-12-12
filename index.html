@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <header class="main__header">
@@ -72,62 +72,80 @@
                 <h2 id="habilidades">LENGUAJES</h2> 
                 <div class="div__proyectos">
                     <div class="div__proyecto">
-                        <figure><img class="logo-resize" src="/img/logo-java.png" alt=""></figure>
+                        <figure><img class="logo-resize" src="/img/java-icono.svg" alt=""></figure>
                         <span>JAVA</span>
                     </div>
                     <div class="div__proyecto">
-                        <figure><img class="logo-resize" src="/img/logo-python.png" alt=""></figure>
+                        <figure><img class="logo-resize" src="/img/python-icono.svg" alt=""></figure>
                         <span>PYTHON</span>
                     </div>
                     <div class="div__proyecto">
-                        <figure><img class="logo-resize" src="/img/logo-mysql.png" alt=""></figure>
+                        <figure><img class="logo-resize" src="/img/mysql-icono.svg" alt=""></figure>
                         <span>MYSQL</span>
                     </div>
                     <div class="div__proyecto">
-                        <figure><img class="logo-resize" src="/img/logo-git.png" alt=""></figure>
+                        <figure><img class="logo-resize" src="/img/git-icono.svg" alt=""></figure>
                         <span>GIT</span>
                     </div>
                     <div class="div__proyecto">
-                        <figure><img class="logo-resize" src="/img/logo-postman.png" alt=""></figure>
+                        <figure><img class="logo-resize" src="/img/postman-icono.svg" alt=""></figure>
                         <span>POSTMAN</span>
                     </div>
                     <div class="div__proyecto">
-                        <figure><img class="logo-resize" src="/img/logo-html.png" alt=""></figure>
+                        <figure><img class="logo-resize" src="/img/html-icono.svg" alt=""></figure>
                         <span>HTML</span>
                     </div>
                     <div class="div__proyecto">
-                        <figure><img class="logo-resize" src="/img/logo-css.png" alt=""></figure>
+                        <figure><img class="logo-resize" src="/img/css-icono.svg" alt=""></figure>
                         <span>CSS</span>
                     </div>
                     <div class="div__proyecto">
-                        <figure><img class="logo-resize" src="/img/logo-js.png" alt=""></figure>
+                        <figure><img class="logo-resize" src="/img/javascript-icono.svg" alt=""></figure>
                         <span>JAVASCRIPT</span>
                     </div>
                 </div>
             </div>
 
-            <div class="div__seccion">
+            <div class="div__seccion seccion-proyectos">
                 <h2 id="proyectos">PROYECTOS</h2>
-                <div>
-                    PROYECTO 1
-                </div>
-                <div>
-                    PROYECTO 2
-                </div>
-                <div>
-                    PROYECTO 3
+                <div class="proyectos-contenedores">
+                    <div class="contenedor-proyecto">
+                        <img  class="img-proyecto" src="/img/proyecto-secundario-small.jpg" alt="">
+                        <div class="descripcion-proyecto">
+                            <h4 class="titulo-proyecto informacion-proyecto"> PROYECTO 1</h4>
+                            <p class="informacion-proyecto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident in eum placeat voluptates quas.</p>
+                        </div>
+                    </div>
+                    <div class="contenedor-proyecto">
+                        <img  class="img-proyecto" src="/img/proyecto-tercer-small.jpg" alt="">
+                        <div class="descripcion-proyecto">
+                            <h4 class="titulo-proyecto informacion-proyecto">PROYECTO 2</h4>
+                            <p class="informacion-proyecto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident in eum placeat voluptates quas.</p>
+                        </div>
+                    </div>
+                    <div class="contenedor-proyecto">
+                        <img class="img-proyecto" src="/img/proyecto-small.jpg" alt="">
+                        <div class="descripcion-proyecto">
+                            <h4 class="titulo-proyecto informacion-proyecto">PROYECTO 3</h4>
+                            <p class="informacion-proyecto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident in eum placeat voluptates quas.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="div_seccion formulario">
+            <div class="div__seccion formulario">
                 <h2 id="titulo-contacto">CONTACTO</h2>
-                <form action="" class="formulario-form" id="formulario-contacto">
-                    <input class= "formulario-form_input" type="text" name="name" id="" required>
-                    <input class= "formulario-form_input" type="text" name="asunto" id="">
-                    <input class= "formulario-form_input" type="email" name="email" id="" required>
-                    <textarea class= "formulario-form_input" name="mensaje" id="formulario-contacto"></textarea>
-                    <input class= "formulario-form_input" type="submit" value="Enviar">
-                </form>
+                <div class="div__formulario">
+                    <form action="" class="formulario-form" id="formulario-contacto">
+                        <span>NOMBRE</span>
+                        <input class= "formulario-form_input" type="text" name="name" id="" required>
+                        <span>EMAIL</span>
+                        <input class= "formulario-form_input" type="email" name="email" id="" required>
+                        <span>MENSAJE</span>
+                        <textarea class= "formulario-form_input input-textarea" name="mensaje" id="formulario-contacto"></textarea>
+                        <input class= "formulario-form_input input-button" type="submit" value="Enviar">
+                    </form>
+                </div>
             </div>
         </div>
     </div>

@@ -180,7 +180,7 @@ ul{
     text-decoration: none;
     font-size: 1.25rem;
 }
-/* PROYECTOS */
+/* HABILIDADES */
 
 .div__proyectos{
     display: flex;
@@ -204,24 +204,98 @@ ul{
     height: 48px;
 }
 
+/* PROYECTOS */
+.seccion-proyectos{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.proyectos-contenedores{
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.contenedor-proyecto{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    min-height: 300px;
+    border: 2px solid var(--color-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 6px rgba(46, 50, 95, 0.6);
+}
+
+.titulo-proyecto{
+    width: 100%;
+    border-bottom: 2px solid var(--color-bg);
+    border-top: 2px solid var(--color-bg);
+    
+}
+.informacion-proyecto{
+    padding: 5px 0 5px 0;
+
+}
+
+.img-proyecto {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+#proyectos {
+    display: block;
+}
 /* FORMULARIO */
 .formulario {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 50px;
+    
 }
 .formulario-form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    width: 100%;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    place-content: center;
+    
+
 }
+
+.div__formulario{
+    display: flex;
+    place-content: center;
+    padding: 50px 15px;
+    border: 2px solid var(--color-bg);
+    border-radius: 10px;
+    box-shadow: 0 5px 6px rgba(46, 50, 95, 0.6);
+}
+.formulario-form_input{
+    min-width: 300px;
+    min-height: 35px;
+    max-width: 700px;
+    border: none;
+    border-left: 4px solid var(--color-bg);
+    color: var(--color-analogo);
+} 
 
 #titulo-contacto{
     margin-bottom: 20px;
+}
+.input-textarea{
+    height: 200px;
+}
+
+.input-button{
+    border: none;
+    background-color: var(--color-bg);
+    color: var(--color-fuente);
+
 }
 
 @media (width > 764px){
@@ -252,4 +326,20 @@ ul{
         width: 100px;
         height: 100px;
     }
+    .formulario-form_input{
+        min-width: 700px;
+        min-height: 50px;
+    }
+    .contenedor-proyecto {
+        width: 35%; 
+        height: auto;
+    }
+    .proyectos-contenedores{
+        flex-direction: row;
+    }
+    .img-proyecto {
+        object-fit: cover;
+        height: auto;
+    }
+
 }
