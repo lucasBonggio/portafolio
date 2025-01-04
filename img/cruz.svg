@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 45px;
+      }
+    </style>
+  </defs>
+  <g id="cruz">
+    <line class="cls-1" x1="386.58" y1="112.9" x2="113.42" y2="386.05"/>
+    <line class="cls-1" x1="113.42" y1="113.95" x2="386.58" y2="387.1"/>
+  </g>
+</svg>

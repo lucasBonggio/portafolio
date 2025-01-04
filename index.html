@@ -1,154 +1,196 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta página es mi portafolio personal.">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <title>Portfolio</title>
+    <title>Portafolio</title>
 </head>
 <body>
-    <header class="main__header">
-        <div class="header__overlay">
-        </div>
-        <div class="header__inicio">
+    <!-- INICIO -->
+    <header class="inicio" id="inicio">
+        <div class="inicio_overlay"></div>
+        <div class="inicio_bienvenida">
             <h2>¡BIENVENIDOS!</h2>
-            <img class="inicio_img" src="/img/foto_prueba.webp" alt="">
-            <h2 id="nombre">SOY LUCAS BONGGIO</h2>
+            <img class="inicio_imagen" fetchpriority="high" src="img/foto_prueba.webp" alt="Foto de presentación de Lucas Bonggio">
+            <h2>SOY LUCAS BONGGIO</h2>
             <h1>DESARROLLADOR WEB</h1>
-            <a class="link_bajar" href="#nav">
-                <img src="/img/flecha.png" alt=""></a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, optio. Similique quis omnis fugit dignissimos quia provident ipsam qui exercitationem consectetur, dolorum iste, culpa laudantium ipsa voluptates reiciendis consequatur est.</p>
+            <a href="#inicio_pag"><img class="logo_nav" src="img/flecha.svg" alt="Flecha que dirige hacia el contenido principal"></a>
         </div>
     </header>
-    <nav class="main__nav" id="nav">
-        <div class="nav__container">
-            <figure>
-                <img src="/img/logo.png" alt="">
-            </figure>
-            <label class="icono__menu" for="menu">
-                <input class="menu__checkbox" type="checkbox" name="" id="menu">
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="nav" id="inicio_pag">
+        <div class="contenedor_nav">
+            <figure><img loading="lazy" class="logo_nav" src="img/logo.svg" alt="Logo personal"></figure>
+            <label id="icono_menu" class="icono_menu" for="menu">
+                <input class="logo_nav input--checkbox" type="checkbox" name="" id="menu">
             </label>
-            
         </div>
-        
-        <ul class="nav__list">
-            <li class="nav__item"><a  class="nav__link" href="index.html">Inicio</a>
+        <ul class="lista_nav">
+            <li class="lista_item">
+                <a class="lista_link" href="#inicio">Inicio</a>
             </li>
-            <li class="nav__item">
-                <a class="nav__link" href="#proyectos">Proyectos</a>
+            <li class="lista_item">
+                <a class="lista_link" href="#habilidades">Habilidades</a>
             </li>
-            <li class="nav__item">
-                <a class="nav__link" href="#habilidades">Habilidades</a>
+            <li class="lista_item">
+                <a class="lista_link" href="#proyectos">Proyectos</a>
             </li>
-            <li class="nav__item link__perfil">
-                <a class="nav__link" href="https://github.com/lucasbonggio">Logo Github</a>
+            <li class="lista_item">
+                <a class="lista_link" href="https://github.com/lucasbonggio">
+                    <img class="link-icon" src="img/github.svg" alt="">
+                </a>
             </li>
-            <li class="nav__item">
-                <a class="nav__link" href="https://www.linkedin.com/in/lucas-adriano-bonggio-b62689327/">Logo Linkedin</a></li>
+            <li class="lista_item">
+                <a class="lista_link" href="https://www.linkedin.com/in/lucas-bonggio">
+                    <img class="link-icon" src="img/linkedin.svg" alt="">
+                </a>
+            </li>
         </ul>
     </nav>
-
-    <div class="div__principal">
-        <div class="div__secundario">
-            <div class="div__seccion" id="sobre_mi">
-                <div class="seccion__sobre-mi">
-                    <h2>
-                        SOBRE MÍ
-                    </h2>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. At debitis quidem, pariatur voluptates dignissimos quaerat deleniti blanditiis asperiores, illo consequuntur corrupti eveniet, iusto amet libero id architecto. Dolores, blanditiis dicta.
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut expedita, animi magnam excepturi nulla ipsa quae a vero odit consectetur autem et fugit iste magni odio cum ipsum. Quaerat, ab?
-                    </p>
-                    <div class="seccion-descargar">
-                        <span class="seccion-span">
-                            <a class="seccion-link" href="">DESCARGAR CV</a>
-                        </span>
-                    </div>
-
-                </div>
+    <script src="js/menu.js"></script>
+    <!-- CONTENIDO -->
+    <section class="seccion" > 
+        <!-- SOBRE MI -->
+        <div class="seccion_sobremi" >
+            <h2>SOBRE MÍ</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero voluptatem cupiditate quos enim, quae repellendus consequuntur molestiae necessitatibus consequatur aut repudiandae suscipit quidem ad commodi maiores quibusdam ullam dolorem fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse deserunt quisquam distinctio veritatis harum nemo a quo! Quibusdam voluptas, laborum tempora blanditiis ducimus voluptates sunt commodi laudantium similique recusandae doloremque?</p>
+            <div class="sobremi_cv">
+                <span class="cv_descarga">
+                    <a class="link_cv" href="">DESCARGAR CV</a>
+                </span>
             </div>
-
-            <div class="div__seccion">
-                <h2 id="habilidades">LENGUAJES</h2> 
-                <div class="div__proyectos">
-                    <div class="div__proyecto">
-                        <figure><img class="logo-resize" src="/img/java-icono.svg" alt=""></figure>
-                        <span>JAVA</span>
-                    </div>
-                    <div class="div__proyecto">
-                        <figure><img class="logo-resize" src="/img/python-icono.svg" alt=""></figure>
-                        <span>PYTHON</span>
-                    </div>
-                    <div class="div__proyecto">
-                        <figure><img class="logo-resize" src="/img/mysql-icono.svg" alt=""></figure>
-                        <span>MYSQL</span>
-                    </div>
-                    <div class="div__proyecto">
-                        <figure><img class="logo-resize" src="/img/git-icono.svg" alt=""></figure>
-                        <span>GIT</span>
-                    </div>
-                    <div class="div__proyecto">
-                        <figure><img class="logo-resize" src="/img/postman-icono.svg" alt=""></figure>
-                        <span>POSTMAN</span>
-                    </div>
-                    <div class="div__proyecto">
-                        <figure><img class="logo-resize" src="/img/html-icono.svg" alt=""></figure>
-                        <span>HTML</span>
-                    </div>
-                    <div class="div__proyecto">
-                        <figure><img class="logo-resize" src="/img/css-icono.svg" alt=""></figure>
-                        <span>CSS</span>
-                    </div>
-                    <div class="div__proyecto">
-                        <figure><img class="logo-resize" src="/img/javascript-icono.svg" alt=""></figure>
-                        <span>JAVASCRIPT</span>
-                    </div>
+        </div>
+        <!-- HABILIDADES -->
+        <div class="seccion_habilidades" id="habilidades">
+            <h2>HABILIDADES</h2>
+            <div class="habilidades_lenguajes">
+                <div class="lenguajes">
+                    <figure><img loading="lazy" class="lenguaje_logo" src="img/java-icono.svg" alt="Logo Java"></figure>
+                    <span>JAVA</span>
                 </div>
-            </div>
-
-            <div class="div__seccion seccion-proyectos">
-                <h2 id="proyectos">PROYECTOS</h2>
-                <div class="proyectos-contenedores">
-                    <div class="contenedor-proyecto">
-                        <img  class="img-proyecto" src="/img/proyecto-secundario-small.jpg" alt="">
-                        <div class="descripcion-proyecto">
-                            <h4 class="titulo-proyecto informacion-proyecto"> PROYECTO 1</h4>
-                            <p class="informacion-proyecto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident in eum placeat voluptates quas.</p>
-                        </div>
-                    </div>
-                    <div class="contenedor-proyecto">
-                        <img  class="img-proyecto" src="/img/proyecto-tercer-small.jpg" alt="">
-                        <div class="descripcion-proyecto">
-                            <h4 class="titulo-proyecto informacion-proyecto">PROYECTO 2</h4>
-                            <p class="informacion-proyecto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident in eum placeat voluptates quas.</p>
-                        </div>
-                    </div>
-                    <div class="contenedor-proyecto">
-                        <img class="img-proyecto" src="/img/proyecto-small.jpg" alt="">
-                        <div class="descripcion-proyecto">
-                            <h4 class="titulo-proyecto informacion-proyecto">PROYECTO 3</h4>
-                            <p class="informacion-proyecto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident in eum placeat voluptates quas.</p>
-                        </div>
-                    </div>
+                <div class="lenguajes">
+                    <figure><img loading="lazy" class="lenguaje_logo" src="img/python-icono.svg" alt="Logo Python"></figure>
+                    <span>PYTHON</span>
                 </div>
-            </div>
-
-            <div class="div__seccion formulario">
-                <h2 id="titulo-contacto">CONTACTO</h2>
-                <div class="div__formulario">
-                    <form action="" class="formulario-form" id="formulario-contacto">
-                        <span>NOMBRE</span>
-                        <input class= "formulario-form_input" type="text" name="name" id="" required>
-                        <span>EMAIL</span>
-                        <input class= "formulario-form_input" type="email" name="email" id="" required>
-                        <span>MENSAJE</span>
-                        <textarea class= "formulario-form_input input-textarea" name="mensaje" id="formulario-contacto"></textarea>
-                        <input class= "formulario-form_input input-button" type="submit" value="Enviar">
-                    </form>
+                <div class="lenguajes">
+                    <figure><img loading="lazy" class="lenguaje_logo" src="img/mysql-icono.svg" alt="Logo MySQL"></figure>
+                    <span>MYSQL</span>
+                </div>
+                <div class="lenguajes">
+                    <figure><img loading="lazy" class="lenguaje_logo" src="img/html-icono.svg" alt="Logo Html"></figure>
+                    <span>HTML</span>
+                </div>
+                <div class="lenguajes">
+                    <figure><img loading="lazy" class="lenguaje_logo" src="img/css-icono.svg" alt="Logo CSS"></figure>
+                    <span>CSS</span>
+                </div>
+                <div class="lenguajes">
+                    <figure><img loading="lazy" class="lenguaje_logo" src="img/javascript-icono.svg" alt="Logo Javascript"></figure>
+                    <span>JAVASCRIPT</span>
+                </div>
+                <div class="lenguajes">
+                    <figure><img loading="lazy" class="lenguaje_logo" src="img/postman-icono.svg" alt="Logo Postman"></figure>
+                    <span>POSTMAN</span>
+                </div>
+                <div class="lenguajes">
+                    <figure><img loading="lazy" class="lenguaje_logo" src="img/git-icono.svg" alt="Logo GIT"></figure>
+                    <span>GIT</span>
                 </div>
             </div>
         </div>
-    </div>
-
+        <!-- PROYECTOS -->
+        <div class="seccion_proyectos" id="proyectos">
+            <h2>PROYECTOS</h2>
+            <div class="contenedor_proyectos">
+                <div class="proyecto">
+                    <div class="proyecto-front">
+                        <figure><img src="img/proyecto-small.webp" alt=""></figure>
+                        <h3>PROYECTO 1</h3>
+                    </div>
+                    <div class="proyecto-back">
+                        <h3>PROYECTO 1</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus odio delectus rerum maxime placeat libero nesciunt voluptate, optio alias non porro quasi corrupti reiciendis in.</p>
+                        <div class="info-proyecto">
+                            <div class="tecnologias">
+                                <h4>HTML</h4>
+                                <h4>CSS</h4>
+                                <h4>JAVASCRIPT</h4>
+                            </div>
+                            <div class="portafolio">
+                                <a href="">
+                                    <img src="img/github-mark-white.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="proyecto-front">
+                        <figure><img src="img/proyecto-secundario-small.webp" alt=""></figure>
+                        <h3>PROYECTO 2</h3>
+                    </div>
+                    <div class="proyecto-back">
+                        <h3>PROYECTO 2</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus odio delectus rerum maxime placeat libero nesciunt voluptate, optio alias non porro quasi corrupti reiciendis in.</p>
+                        <div class="info-proyecto">
+                            <div class="tecnologias">
+                                <h4>JAVA</h4>
+                                <h4>SPRING</h4>
+                            </div>
+                            <div class="portafolio">
+                                <a href="">
+                                    <img src="img/github-mark-white.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="proyecto-front">
+                        <figure><img src="img/proyecto-tercer-small.webp" alt=""></figure>
+                        <h3>PROYECTO 3</h3>
+                    </div>
+                    <div class="proyecto-back">
+                        <h3>PROYECTO 3</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus odio delectus rerum maxime placeat libero nesciunt voluptate, optio alias non porro quasi corrupti reiciendis in.</p>
+                        <div class="info-proyecto">
+                            <div class="tecnologias">
+                                <h4>HTML</h4>
+                                <h4>CSS</h4>
+                                <h4>JAVASCRIPT</h4>
+                            </div>
+                            <div class="portafolio">
+                                <a href="">
+                                    <img src="img/github-mark-white.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CONTACTO -->
+        <div class="seccion_contacto">
+            <h2>CONTACTO</h2>
+            <div class="contenedor_formulario">
+                <form action="" class="formulario">
+                    <span>NOMBRE</span>
+                    <input class="formulario_input" type="text" name="" id="nombre">
+                    <span>EMAIL</span>
+                    <input class="formulario_input" type="text" name="" id="email">
+                    <span>MENSAJE</span>
+                    <textarea class="formulario_input input--textarea" name="" id="mensaje"></textarea>
+                    <input class="formulario_input input--boton" type="submit" value="ENVIAR">
+                </form>
+            </div>
+        </div>
+        <!-- FOOTER -->
+    </section>
+    <footer class="footer">
+        <p>© 2024 Lucas Bonggio</p>
+    </footer>
 </body>
 </html>
